@@ -65,7 +65,7 @@ export class FalconSummaryModel extends Modal {
 			const result = response.json;
 
 			if (response.status === 503) {
-				const waitTime : int = result.estimated_time || 20;
+				const waitTime : number = result.estimated_time || 20;
 				console.error(
 					`Model is sleeping. It will be ready in ${Math.round(
 						waitTime
